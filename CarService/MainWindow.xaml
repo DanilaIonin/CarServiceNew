@@ -1,0 +1,28 @@
+﻿<Window x:Class="CarService.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CarService"
+        mc:Ignorable="d"
+        Title="Автосервис" Height="750" Width="1100" Background="#f1f2f7" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="0.2*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Vertical" VerticalAlignment = "Center">
+            <Label Content="Контрольный срез по МДК.02.02" FontSize="30" FontWeight="DemiBold" HorizontalAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Orientation="Vertical" VerticalAlignment = "Center">
+            <Label Content="Автосервис" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center"/>
+        </StackPanel>
+        <Frame Grid.Row="2" Name="FrmMain" NavigationUIVisibility="Hidden"/>
+        <StackPanel Grid.Row="3" Orientation="Vertical" VerticalAlignment = "Center">
+            <Label Content="Выполнил студент 4 курса группы ИСП.20А" FontSize="22" FontWeight="DemiBold" HorizontalAlignment="Center" Margin="-5"/>
+            <Label Content="Ионин Данила Вадимович" FontSize="22" FontWeight="DemiBold" HorizontalAlignment="Center" />
+        </StackPanel>
+    </Grid>
+</Window>
